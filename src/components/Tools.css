@@ -1,0 +1,33 @@
+.des{
+    text-align: center;
+    margin-top: 10px;
+    color: gold;
+}
+.tool-pad{
+    margin-bottom: 30px;
+}
+/* .tool-container{
+    display: flex;
+    align-items: center;
+} */
+.text-size{
+    margin: 20px;
+    font-size: 35px;
+    color: rgb(255, 251, 21);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* space between items */
+}
+
+/* Responsive breakpoints */
+@media (max-width: 900px) {
+    .text-size {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .text-size {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+  }

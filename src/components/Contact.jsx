@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import ".//Contact.css";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -50,8 +51,8 @@ export const Contact = () => {
 
     try {
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        'service_yyu0z05',
+        'template_hf5awax',
         {
           name: formData.name,
           email: formData.email,
@@ -64,8 +65,8 @@ export const Contact = () => {
         success: true,
         error: false,
         message: "Message sent successfully!",
+        
       });
-
       setFormData({
         name: "",
         email: "",
@@ -137,15 +138,29 @@ export const Contact = () => {
 
           {formStatus.message && (
             <motion.div
-              className={`form-status ${
-                formStatus.success ? "success" : "error"
-              } `}
+              className={`form-status ${formStatus.success ? "success" : "error"
+                } `}
             >
               {formStatus.message}
             </motion.div>
           )}
         </motion.form>
       </motion.div>
+      <h1 className="div-center-social">Social Link</h1>
+      <div className="div-center">
+        
+        <motion.div className="social-links" variants={staggerContainer}>
+          <motion.a href="https://github.com/AANirjon" target="_blank">
+            <i className="fab fa-github"> </i>
+          </motion.a>
+          <motion.a href="www.linkedin.com/in/ahnaf-asad-nirjon-7958631b2" target="_blank">
+            <i className="fab fa-linkedin"> </i>
+          </motion.a>
+          <motion.a href="https://facebook.com" target="_blank">
+            <i className="fab fa-facebook"> </i>
+          </motion.a>
+        </motion.div>
+      </div>
     </motion.section>
   );
 };

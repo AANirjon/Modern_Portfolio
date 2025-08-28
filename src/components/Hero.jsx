@@ -40,7 +40,7 @@ export const Hero = () => {
             variants={fadeInUp}
             whileHover={{ scale: 1.02 }}
           >
-            PedroTech
+            Ahnaf Asad Nirjon
           </motion.h1>
           <motion.h2 className="hero-subtitle" variants={fadeInUp}>
             {" "}
@@ -63,7 +63,7 @@ export const Hero = () => {
               View My Work
             </motion.a>
             <motion.a
-              href="#contacts"
+              href="#contact"
               className="cta-secondary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -72,14 +72,14 @@ export const Hero = () => {
             </motion.a>
           </motion.div>
           <motion.div className="social-links" variants={staggerContainer}>
-            <motion.a href="https://github.com" target="_blank">
+            <motion.a href="https://github.com/AANirjon" target="_blank">
               <i className="fab fa-github"> </i>
             </motion.a>
-            <motion.a href="https://linkedin.com" target="_blank">
+            <motion.a href="www.linkedin.com/in/ahnaf-asad-nirjon-7958631b2" target="_blank">
               <i className="fab fa-linkedin"> </i>
             </motion.a>
-            <motion.a href="https://twitter.com" target="_blank">
-              <i className="fab fa-twitter"> </i>
+            <motion.a href="https://facebook.com" target="_blank">
+              <i className="fab fa-facebook"> </i>
             </motion.a>
           </motion.div>
         </motion.div>
@@ -105,12 +105,17 @@ export const Hero = () => {
               style={vscDarkPlus}
             >
               {`const aboutMe: DeveloperProfile = {
-  codename: "PedroTech",
-  origin: "🌍 Somewhere between a coffee shop and a terminal",
-  role: "Fullstack Web Sorcerer",
+  codename: "Ahnaf Asad",
+  origin: "🌍 Somewhere between a coffee shop and a terminal.",
+  role: "Fullstack Web Developer",
   stack: {
-    languages: ["JavaScript", "TypeScript", "SQL"],
-    frameworks: ["React", "Next.js", "TailwindCSS", "Supabase"],
+    basic:["HTML", "CSS", "JavaScript"],
+
+    expertise:["React.js", "Node.js", "Next.js", "TailwindCSS", "Express.js",
+              "React-Router", "MongoDB", "Firebase"],
+
+    frameworks:["TailwindCSS", "daisy.UI", "Email.JS", "Bootstrap",
+                "AND SO ON..."],
   },
   traits: [
     "pixel-perfectionist",
@@ -119,7 +124,8 @@ export const Hero = () => {
     "terminal aesthetic enthusiast",
   ],
   missionStatement:
-    "Turning ideas into interfaces and bugs into feature",
+    "Building beautiful, interactive web apps with React.js, JavaScript 
+     & full-stack expertise (Node.js, Express.js, MongoDB, Firebase).",
   availability: "Available for hire",
 };`}
             </SyntaxHighlighter>
