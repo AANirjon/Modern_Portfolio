@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import { FaBootstrap, FaCss3, FaDatabase, FaHtml5, FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { TiWeatherPartlySunny } from "react-icons/ti";
+import { IoLogoFirebase } from "react-icons/io5";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -46,18 +50,17 @@ export const Projects = () => {
         >
           <motion.div
             className="project-image"
-            style={{ backgroundImage: "url('/projects/ai-saas.png')" }}
+            style={{ backgroundImage: "url('/projects/project_1.PNG')" }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
-          <h3> AI SaaS Platform</h3>
+          <h3>Restaurant App</h3>
           <p>
-            A modern SaaS platform built with Next.js and OpenAI integration,
-            featuring real-time AI-powered content generation and analytics.
+          A full-stack restaurant website built with the MERN stack, featuring a fully integrated backend. Firebase is used for authentication, while Tailwind CSS and DaisyUI are implemented for modern and responsive styling. 
           </p>
           <div className="project-tech">
-            <span>Next.js</span>
-            <span>OpenAI</span>
-            <span>TailwindCSS</span>
+            <span><FaReact/> React.js</span>
+            <span><FaDatabase/>MongoDB</span>
+            <span><RiTailwindCssFill/> TailwindCSS</span>
           </div>
         </motion.div>
 
@@ -69,20 +72,19 @@ export const Projects = () => {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: "url('/projects/social-media.png')",
+              backgroundImage: "url('/projects/project_weather.PNG')",
             }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
-          <h3>Social Media Dashboard</h3>
+          <h3>Live Weather App</h3>
           <p>
-            A comprehensive social media management dashboard with analytics,
-            scheduling, and engagement tracking features.
+          A dynamic Weather Application built with HTML and CSS, providing real-time weather updates by integrating external APIs. There also a search box. The app features a user-friendly interface styled with vanilla CSS, ensuring responsiveness across all devices.
           </p>
           <div className="project-tech">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
+            <span><FaHtml5/> HTML</span>
+            <span><FaCss3/> CSS</span>
+            <span><TiWeatherPartlySunny /> Weather API</span>
           </div>
         </motion.div>
 
@@ -94,20 +96,19 @@ export const Projects = () => {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: "url('/projects/stopwatch.png')",
+              backgroundImage: "url('/projects/project_e-learning.PNG')",
             }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
-          <h3>Productivity Timer</h3>
+          <h3>Easy Learning Webapp</h3>
           <p>
-            A sleek productivity timer application with customizable work
-            sessions, statistics tracking, and dark mode support.
+          Easy Learning is a full-stack e-learning website built with the MERN stack, offering a smooth and interactive online education experience. The platform includes secure Firebase authentication, course browsing, and a fully responsive design styled with Bootstrap for a clean and modern look.
           </p>
           <div className="project-tech">
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>TailwindCSS</span>
+            <span><FaReact/> React.js</span>
+            <span><IoLogoFirebase /> Firebase</span>
+            <span><FaBootstrap/> Bootstrap</span>
           </div>
         </motion.div>
       </motion.div>

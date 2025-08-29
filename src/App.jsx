@@ -9,11 +9,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import Tools from "./components/Tools";
 import { Footer } from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollReveal from "./components/ScrollReveal";
 
 function App() {
   // const [isLoaded, setIsLoaded] = useState(false);
   const [step, setStep] = useState(0);
-  
+
 
   // Email Pas key
   useEffect(() => {
@@ -102,15 +103,23 @@ function App() {
           <motion.div
             key="home"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            animate={{ opacity: 2, y: 0 }}
+            transition={{ duration: 2 }}
           >
             <Navbar />
             <Hero />
-            <Projects />
-            <Contact />
-            <Tools />
-            <Footer />
+            <ScrollReveal delay={0.2}>
+              <Projects />
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <Contact />
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <Tools />
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <Footer />
+            </ScrollReveal>
             <ScrollToTop></ScrollToTop>
           </motion.div>
         )}

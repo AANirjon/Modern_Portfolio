@@ -12,8 +12,8 @@
 } */
 .text-size{
     margin: 20px;
-    font-size: 35px;
-    color: rgb(255, 251, 21);
+    font-size: 30px;
+    color: rgb(126, 25, 221);
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
     gap: 20px; /* space between items */
